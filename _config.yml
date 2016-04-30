@@ -17,6 +17,8 @@ url: "http://europinion-now.com" # the base hostname & protocol for your site
 twitter_username: studioalloy
 github_username:  studioalloy
 
+image: image.jpg
+
 # Build settings
 markdown: kramdown
 
