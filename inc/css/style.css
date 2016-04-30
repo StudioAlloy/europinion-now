@@ -91,6 +91,10 @@ p {
   bottom: 20px;
   width: 250px;
 }
+.what-eu-future img {
+    max-width: 90px;
+    margin: 0 20px;
+}
 /* Typography
 ------------------------------------------- */
 html, body {
@@ -99,7 +103,7 @@ html, body {
   font-size: 18px;
   line-height: 26px;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h4, h5 {
   margin-top: 0;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -111,6 +115,10 @@ h1 {
 h2 {
   font-size: 2.6rem;
   line-height: 3rem;
+}
+h3 {
+  font-size: 21px;
+  line-height: 30px;
 }
 /* Typography
 +++++++++++++++++++++++++++++++++++++++++++ */
@@ -148,7 +156,7 @@ h2 {
   display: block;
   background: #94E;
   color: #fff;
-  padding: 10px;
+  padding: 7px 40px 10px;
   position: absolute;
   left: 0;
 }
@@ -164,6 +172,9 @@ h2 {
   left: 0;
   top: 0;
   pointer-events: none;
+}
+.column h3 {
+  margin-top: 0;
 }
 /* Bits
 +++++++++++++++++++++++++++++++++++++++++++ */
@@ -223,6 +234,10 @@ hr {
   background: #94E;
   border: 0;
   max-width: 400px;
+}
+.alloy-slide-content p {
+  text-align: left;
+  margin-top: 60px;
 }
 /* Slides
 +++++++++++++++++++++++++++++++++++++++++++ */
@@ -367,7 +382,7 @@ hr {
   left: 0;
 }
 .question label span:hover {
-  background: #94E;
+  background: #94e;
 } 
 .question label span {
   width: 30px;
@@ -377,6 +392,7 @@ hr {
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
+  border: 2px solid #94e;
 }
 .question img {
   position: absolute;
@@ -387,7 +403,7 @@ hr {
 .question__inner {
   position: absolute;
   bottom: 50px;
-  background: #cee;
+  background: #fff;
   left: 50px;
   border-radius: 5px;
   padding: 40px;
@@ -395,6 +411,9 @@ hr {
   opacity: 0;
   pointer-events: none;
   transition: all .5s ease;
+  color: #000;
+  max-width: 780px;
+  width: 80%;
 }
 .alloy-agree,
 .alloy-disagree {
@@ -431,6 +450,7 @@ input:checked ~ .question__inner {
   margin-bottom: 30px;
   padding-bottom: 20px;
   max-width: 400px;
+  margin: 30px auto;
 }
 /* Question
 +++++++++++++++++++++++++++++++++++++++++++ */
