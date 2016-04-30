@@ -1,0 +1,483 @@
+
+* {
+  box-sizing: border-box;
+}
+:focus {
+  outline: none;
+}
+body {
+  background: #cee;
+}
+section {
+  text-align: center;
+}
+.alloy-bg .container {
+  background: #799;
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  transition: transform .4s ease;
+}
+.alloy-custom-title {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  padding: 75px 0 25px;
+  width: 500px;
+  margin-left: -250px;
+}
+.alloy-custom-title h1 {
+  margin-bottom: 10px;
+}
+img {
+  width: 70%;
+}
+.alloy-aboslute,
+.container {
+  height: 90vh;
+  width: 90vw;
+}
+.alloy-aboslute {
+  position: absolute;
+  padding: 60px;
+  color: #fff;
+  left: 50%;
+  margin-left: -45vw;
+}
+.alloy-columns > * {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.alloy-columns li {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.alloy-columns li.active {
+  background: #94E;
+  color: #fff;
+}
+.container {
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+.column {
+  text-align: left;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 30px;  
+}
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.alloy-beta {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+p {
+  margin-top: 0;
+}
+.europinion-counts-cta {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 250px;
+}
+/* Typography
+------------------------------------------- */
+html, body {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+h2 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+/* Typography
++++++++++++++++++++++++++++++++++++++++++++ */
+/* Bits
+------------------------------------------- */
+.alloy-svg-width {
+  width: 65%;
+}
+.alloy-svg-bg-style {
+  stroke: #799 
+}
+.alloy-svg-active-fill {
+  fill: #94E;
+}
+.alloy-svg-active-stroke {
+  stroke: #94E;
+}
+.alloy-move-input:checked ~ .container {
+  transform: translateX(90vw) !important;
+}
+.alloy-hack img {
+  height: 40px;
+  padding: 10px;
+}
+.alloy-hack {
+  transform: rotate(-90deg);
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  top: 50%;
+  margin-bottom: -20px;
+}
+.alloy-hack span {
+  display: block;
+  background: #94E;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+}
+.alloy-move-input:checked ~ .alloy-cancel {
+  z-index: 999;
+}
+.alloy-cancel-input:checked ~ .alloy-move {
+  z-index: 999;
+}
+.alloy-hack-input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+/* Bits
++++++++++++++++++++++++++++++++++++++++++++ */
+/* Fullpage js
+------------------------------------------- */
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  width: 60px;
+  height: 76px;
+  cursor: pointer;
+  border: none;
+  transition: all .3s ease;
+}
+.fp-controlArrow.fp-prev {
+  left: 100px;
+  background: url(/inc/img/arrow-left.svg) no-repeat;
+}
+.fp-controlArrow.fp-next {
+  right: 100px;
+  background: url(/inc/img/arrow-right.svg) no-repeat;
+    background-position: right;
+}
+.fp-controlArrow.fp-prev:hover {
+  left: 80px;
+}
+.fp-controlArrow.fp-next:hover {
+  right: 80px;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+  background: #94E;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #94E;
+}
+#fp-nav.right {
+  right: 24px;
+}
+/* Fullpage js
++++++++++++++++++++++++++++++++++++++++++++ */
+/* Slides
+------------------------------------------- */
+.container, .slide {
+  position: relative;
+  background-position: center bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+}
+.alloy-slide-content {
+  max-width: 600px;
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  top: 130px;
+}
+hr {
+  height: 4px;
+  background: #94E;
+  border: 0;
+  max-width: 400px;
+}
+/* Slides
++++++++++++++++++++++++++++++++++++++++++++ */
+/* ge_bargraph
+------------------------------------------- */
+#ge_bargraph{
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 25vh;
+}
+.ge_bargraph .bar{
+  fill: #fff;
+}
+.ge_bargraph .bar:hover, .ge_bargraph .bar.NL{
+  fill: #94E;
+}
+.ge_bargraph .selection button{
+  border: none;
+  background: #fff;
+  color: #94E;
+  font-size: 18px;
+  padding: 0px 12px;
+  margin: 5px 2px;
+  height: 50px;
+  outline: none;
+  transition: background .3s, color .3s;
+}
+.d3-tip {
+    display: block;
+    background-color: #aceecc;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "Oswald",sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+.ge_bargraph .selection button:hover{
+  background: #94E;
+  color: #fff;
+}
+.ge_bargraph .selection button.selected{
+  background: #94E;
+  color: #fff;
+}
+.ge_bargraph .d3-tip {
+  line-height: 1em;
+  padding: 12px;
+  font-size: 12px;
+  background: #94E;
+  color: #fff;
+  border-radius: 2px;
+}
+.ge_bargraph .checkLine{
+  stroke-width: 1px;
+  stroke: #94E;
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.ge_bargraph .d3-tip {
+  position: relative;
+}
+.ge_bargraph .d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: #94E;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+.ge_bargraph .d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+.ge_bargraph #reorder.reordered{
+  background: #94E;
+  color: #fff;
+}
+.ge_bargraph #reorder{
+  border: none;
+  position: absolute;
+  left: 0;
+  top:0;
+  background: #fff;
+  color: #94E;
+  font-weight: normal;
+  font-size: 26px;
+  padding: 2px 6px;
+  margin: 5px 2px;
+  outline: none;
+}
+/* {END} ge_bargraph
++++++++++++++++++++++++++++++++++++++++++++ */
+/* radial_graph
+------------------------------------------- */
+.fadeHide{
+  opacity: .1 !important;
+}
+.chord path{
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.radial_graph_cont{
+  height: 100%;
+  margin-top: 20vh;
+}
+.selected_radial_thing, .tick_19{
+  fill: #94E !important;
+  stroke: #94E !important;
+}
+/* {END} radial_graph
++++++++++++++++++++++++++++++++++++++++++++ */
+/* Question
+------------------------------------------- */
+.question img{
+  width: 70px;
+  height: 70px;
+}
+.question label span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #94E;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.question input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+.question label span:hover {
+  background: #94E;
+} 
+.question label span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.question img {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  z-index: 99;
+}
+.question__inner {
+  position: absolute;
+  bottom: 50px;
+  background: #cee;
+  left: 50px;
+  border-radius: 5px;
+  padding: 40px;
+  z-index: 9;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s ease;
+}
+.alloy-agree,
+.alloy-disagree {
+  font-size: 12px;
+  max-width: 70px;
+  line-height: 17px;
+  vertical-align: top;
+}
+.alloy-agree {
+    text-align: left;
+    margin-left: 10px;  
+}
+.alloy-disagree {
+    text-align: right;
+    margin-right: 10px;
+}
+.alloy-buttons > * {
+  display: inline-block;
+}
+/* Hacks */
+.question__inner:hover,
+.alloy-hover:hover ~ .question__inner {
+  opacity: 1;
+  pointer-events: auto;
+}
+input:checked ~ .question__inner {
+  width: 0px;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+}
+.question__inner h3 {
+  border-bottom: 2px solid #94E;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  max-width: 400px;
+}
+/* Question
++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Footer & credits
+------------------------------------------- */
+h2 span {
+  background: #94E;
+  border-radius: 50%;
+  padding: 30px 20px;
+}
+.credits .inner.centered {
+  padding-top: 80px;
+}
+.alloy-logo span {
+  vertical-align: top;
+  font-size: 37px;
+  margin-top: 13px;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.alloy-logo img {
+  width: 70px;
+  height: 70px;
+}
+a.alloy-logo {
+  display: block;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+.column li span {
+  font-weight: 400;
+  display: inline-block;
+}
+.column li {
+  font-weight: 700;
+}
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+/* Footer & credits
++++++++++++++++++++++++++++++++++++++++++++ */
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include under.html %}
+    <div id="fullpage">
+      {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="inc/fullpage/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        verticalCentered: true,
+        //Custom selectors
+        verticalCentered: false,
+        sectionSelector: 'section',
+        slideSelector: '.slide',
+
+      });
+    });
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+    <script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script type="text/javascript" src="inc/js/script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+{% assign items = site.sections | sort: 'order' %}
+{% for section in items %}
+<section data-anchor="{{ section.title | slugify }}" class="alloy-bg">
+  <input class="alloy-cancel-input alloy-hack-input" type="radio" name="nav" id="{{ section.title | slugify }}-cancel" />
+  <input class="alloy-move-input alloy-hack-input" type="radio" name="nav" id="{{ section.title | slugify }}-move" />
+  <label class="alloy-cancel alloy-hack" for="{{ section.title | slugify }}-cancel"><span>selection</span></label>
+  <label class="alloy-move alloy-hack" for="{{ section.title | slugify }}-move"><span>selection</span></label>
+  <div class="container" {% if section.background %} style="background-image: url(inc/img/{{section.background}})" {% endif %}>
+    <div class="alloy-custom-title">
+      <h1>{{ section.title }}</h1>
+      <h3>{{ section.sub-title }}</h3>
+    </div>
+    
+    {% include question.html %}
+    {{ section.content }}
+    <div class="europinion-counts-cta">
+      <img src="inc/img/europinion-counts.svg" />
+    </div>
+    
+  </div>
+</section>
+{% endfor %}

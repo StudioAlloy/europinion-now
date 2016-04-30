@@ -1,0 +1,26 @@
+<div class="question">
+  <img src="inc/img/vraagteken.svg" class="alloy-hover">
+  <input type="radio" name="nav" id="{{ section.title | slugify }}-against" />
+  <input type="radio" name="nav" id="{{ section.title | slugify }}-disagree" />
+  <input type="radio" name="nav" id="{{ section.title | slugify }}-natural" />
+  <input type="radio" name="nav" id="{{ section.title | slugify }}-agree" />
+  <input type="radio" name="nav" id="{{ section.title | slugify }}-pro" />
+  <div class="question__inner">
+    <h3>{{ section.question }}</h3>
+    <div class="alloy-buttons">
+      <div class="alloy-disagree">
+        Strongly Disagree
+      </div>
+      
+      <label for="{{ section.title | slugify }}-against"><span></span></label>
+      <label for="{{ section.title | slugify }}-disagree"><span></span></label>
+      <label for="{{ section.title | slugify }}-natural"><span></span></label>
+      <label for="{{ section.title | slugify }}-agree"><span></span></label>
+      <label for="{{ section.title | slugify }}-pro"><span></span></label>
+      
+      <div class="alloy-agree">
+        Strongly Agree
+      </div>
+    </div>
+  </div>
+</div>
