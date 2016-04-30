@@ -192,8 +192,8 @@ $(function(){
       .sortSubgroups(d3.descending)
       .matrix(matrix_data[type]);
 
-    var height = parseInt($('.radial_graph_cont').height())-300,
-      width = $('.radial_graph_cont').width()-300,
+    var height = parseInt($('.radial_graph_cont').height())-350,
+      width = $('.radial_graph_cont').width()-350,
       innerRadius = Math.min(width, height) * .41,
       outerRadius = innerRadius * 1.1;
 

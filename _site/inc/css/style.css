@@ -23,8 +23,8 @@ section {
   color: #fff;
   left: 50%;
   padding: 75px 0 25px;
-  width: 500px;
-  margin-left: -250px;
+  width: 600px;
+  margin-left: -300px;
 }
 .alloy-custom-title h1 {
   margin-bottom: 10px;
@@ -132,7 +132,7 @@ p.seo-tekst{
 /* Bits
 ------------------------------------------- */
 .alloy-svg-width {
-  width: 65%;
+  width: 60%;
 }
 .alloy-svg-bg-style {
   stroke: #799 
@@ -199,6 +199,12 @@ p.seo-tekst{
     left: 72%;
     top: 30%;
 }
+#tweetbg{
+	background-image: url(/inc/img/tweetbg.svg);
+	width:100%;
+	height:100%;
+	background-size: cover;
+}
 /* Bits
 +++++++++++++++++++++++++++++++++++++++++++ */
 /* Fullpage js
@@ -227,10 +233,10 @@ p.seo-tekst{
   right: 80px;
 }
 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
-  background: #94E;
+  background: #94E !important;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background: #94E;
+  background: #94E  !important;
 }
 #fp-nav.right {
   right: 24px;
@@ -241,7 +247,7 @@ p.seo-tekst{
 ------------------------------------------- */
 .container, .slide {
   position: relative;
-  background-position: center bottom !important;
+    background-position: center -70px;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
@@ -261,6 +267,19 @@ hr {
 .alloy-slide-content p {
   text-align: left;
   margin-top: 60px;
+  background: rgba(119,153,153,0.6);
+  padding: 15px 30px;	
+}
+.radial-label {
+  position: absolute;
+  z-index: 9999;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+  bottom: 130px;
+}
+.mobile {
+  display: none !important;
 }
 /* Slides
 +++++++++++++++++++++++++++++++++++++++++++ */
@@ -308,7 +327,7 @@ input.tree-start {
   position: relative;
   padding: 10px;
   display: inline-block;
-  margin-top: 35vh;
+  margin-top: 30vh;
 }
 .ge_bargraph .bar{
   fill: #fff;
@@ -416,7 +435,7 @@ input.tree-start {
 }
 .radial_graph_cont{
   height: 100%;
-  margin-top: 20vh;
+  margin-top: 30vh;
 }
 .selected_radial_thing, .tick_19{
   fill: #94E !important;
@@ -563,10 +582,89 @@ a.alloy-logo {
   margin: 0;
   margin-bottom: 30px;
 }
+.alloy-mobile {
+  position: absolute;
+  z-index: 99999999999999;
+  background: #799;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease;
+}
+#mobile-close:checked ~ .alloy-mobile {
+  transform: translateY(-150vh);
+  pointer-events: none;
+  opacity: 0;
+}
+input.mobile-close {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+label.mobile-close span {
+  padding: 10px 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  color: #94e;
+}
+a.alloy-mail-button {
+  background: #94e;
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  margin-bottom: 20px;
+  max-width: 60%;
+margin: 0 auto;
+  font-size: 20px;
+}
+a.europinion-counts {
+  position: absolute;
+  bottom: 20px;
+}
 /* Footer & credits
 +++++++++++++++++++++++++++++++++++++++++++ */
+@media only screen and (min-width : 768px) {	
+	/* Styles */
+  .alloy-mobile {
+		display: none;
+	}
+}
+@media only screen and (max-width : 1024px) {	
+	/* Styles */
+  .alloy-aboslute,
+  .inner.centered .column:first-of-type,
+  label.alloy-cancel.alloy-hack,
+  label.alloy-move.alloy-hack,
+  img.alloy-beta {
+  display: none;
+}
+	.fp-controlArrow.fp-prev {
+  left: 20px;
+}
+  	.fp-controlArrow.fp-next {
+  right: 20px;
+}
+  
+.column {
+  width: 100%;
+}
+  #fp-nav.right {
+  right: 4px;
+}
+}
 @media only screen and (max-width : 767px) {	
 	/* Styles */
+  .mobile {
+  display: block !important;
+}
   .alloy-aboslute,
   .inner.centered .column:first-of-type,
   .alloy-custom-title h3,
@@ -578,11 +676,14 @@ a.alloy-logo {
 	}
   .container {
     height: auto !important;
-    min-height: 97vh;
-    width: 97vw;
+    min-height: 600px;
+    width: auto !important;
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  section {
+  margin-bottom: 20px;
+}
   html {
     font-size: 10px;
   }
@@ -623,7 +724,24 @@ a.alloy-logo {
   margin-bottom: 30px;
   margin-top: 60px;
 }
-  .alloy-svg-width {
+.alloy-svg-width {
   width: 100%;
+  height: 400px;
+}
+  img.tweet {
+  position: relative;
+  display: block;
+  left: inherit;
+  width: 80%;
+  margin: 0 auto;
+}
+.what-eu-future {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  left: inherit;
+  display: block;
+  bottom: inherit;
+  margin-top: 30px;
 }
 }
