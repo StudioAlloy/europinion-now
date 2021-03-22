@@ -12,7 +12,8 @@ subtitle: Europinion Now, let us define the future of Europe!
 description: > # this means to ignore newlines until "baseurl:"
   The European Union recently turned 70. Instead of great celebration, the current system is being disputed from all sides. Now is the time to to define the future of our Europe. Europinion NOW!
 baseurl: "http://europinion-now.com" # the subpath of your site, e.g. /blog
-url: "http://europinion-now.com" # the base hostname & protocol for your site
+# url: "http://europinion-now.com" # the base hostname & protocol for your site
+url: "/"
 twitter_username: studioalloy
 github_username:  studioalloy
 
